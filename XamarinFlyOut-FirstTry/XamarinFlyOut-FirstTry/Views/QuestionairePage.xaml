@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFlyOut_FirstTry.Views.QuestionairePage"
+             Title="{Binding Title}">
+    <StackLayout BackgroundColor="#B0C1F0">
+        <Label 
+            Text="Personality Quiz." 
+            x:Name="lbl_QuizTitle"
+            FontSize="Title"
+            HorizontalTextAlignment="Center"
+            BackgroundColor="blue"
+            TextColor="White"
+            Padding="35,15,35,15"
+               />
+
+        <Label 
+            Text="Choose an answer to each question and find out what type of foodie you are!" 
+            x:Name="lbl_Instructions"
+            FontSize="16" 
+            Padding="30,0,30,0" 
+               />
+
+        <Label 
+            Text="Let's Get Started!!!"
+            x:Name="lbl_Question_Number"
+            Padding="15,15,5,0"
+            FontSize="15"
+            FontAttributes="Bold"
+                />
+
+        <Label 
+            Text="Questions: "
+            x:Name="lbl_Question_Listed"
+            Padding="15,0,15,10" 
+            FontSize="16"
+            HorizontalTextAlignment="Center"
+            TextColor="Blue"
+                />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button 
+            Text=" True "
+            x:Name="btn_True"
+                Clicked="btn_True_Clicked"
+            Grid.Row="0"
+            Grid.Column="0"
+            Padding="5,10,5,10" 
+            FontSize="15"
+            TextColor="White"
+            FontAttributes="Bold"
+            BackgroundColor="Blue"
+            BorderColor="White"
+            BorderWidth="4"
+            CornerRadius="10"
+                />
+
+            <Button 
+            Text=" False "
+            x:Name="btn_False"
+                Clicked="btn_False_Clicked"
+            Grid.Row="0"
+            Grid.Column="1"
+            Padding="5,10,5,10" 
+            FontSize="15"
+            TextColor="White"
+            FontAttributes="Bold"
+            BackgroundColor="Blue"
+            BorderColor="White"
+            BorderWidth="4"
+            CornerRadius="10"
+                />
+
+        </Grid>
+    </StackLayout>
+
+</ContentPage>
